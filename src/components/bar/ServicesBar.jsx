@@ -1,35 +1,49 @@
 import React from 'react';
 
+const IMG = '/assets/images/bar-striping';
+
 const SERVICES = [
     {
         icon: 'fas fa-drafting-compass',
+        img: `${IMG}/top-down-of-car-park-at-outdoor.webp`,
+        alt: 'Top-down view of a newly laid out parking lot',
         title: 'New Lot Layout & Striping',
         disc: 'Complete layout design and first-time striping for freshly paved or sealed lots — maximize spaces and keep traffic flowing.',
     },
     {
         icon: 'fas fa-paint-roller',
+        img: `${IMG}/aerial-view-of-many-colorful-cars-parked-on-parkin.webp`,
+        alt: 'Aerial view of a parking lot with crisp fresh lines',
         title: 'Re-Striping & Line Refresh',
         disc: 'Bring faded lines back to life with bright, durable traffic paint. Fast turnaround and minimal downtime for your business.',
     },
     {
         icon: 'fas fa-wheelchair',
+        img: `${IMG}/blue-handicapped-symbol-in-a-parking-spot.webp`,
+        alt: 'Blue accessible parking symbol painted on asphalt',
         title: 'ADA-Compliant Markings',
         disc: 'Accessible stalls, access aisles, and symbols laid out to current ADA standards — stay compliant and avoid costly fines.',
     },
     {
         icon: 'fas fa-road',
-        title: 'Arrows, Stencils & Curbs',
+        img: `${IMG}/white-and-yellow-lines-of-pedestrian-crossing-at-i.webp`,
+        alt: 'Freshly painted pedestrian crossing in white and yellow',
+        title: 'Arrows, Crosswalks & Curbs',
         disc: 'Directional arrows, crosswalks, speed bump painting, and curb marking that guide drivers safely through your property.',
     },
     {
         icon: 'fas fa-fire',
+        img: `${IMG}/parking-spot-designated-for-people-with-disabiliti.webp`,
+        alt: 'Yellow hatched safety zone markings on pavement',
         title: 'Fire Lanes & Safety Zones',
         disc: 'High-visibility fire lanes, no-parking zones, and loading areas marked clearly and to local code requirements.',
     },
     {
         icon: 'fas fa-warehouse',
-        title: 'Warehouse Floor Striping',
-        disc: 'Interior line striping for warehouses and facilities — aisles, walkways, and safety zones that keep your team organized.',
+        img: `${IMG}/office-building.webp`,
+        alt: 'Commercial buildings with fresh crosswalk markings',
+        title: 'Warehouse & Facility Striping',
+        disc: 'Interior and exterior line striping for warehouses and commercial facilities — aisles, walkways, and safety zones.',
     },
 ];
 
@@ -49,11 +63,18 @@ function ServicesBar() {
                     {SERVICES.map((service) => (
                         <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" key={service.title}>
                             <div className="bar-service-card">
-                                <div className="icon" aria-hidden="true">
-                                    <i className={service.icon} />
+                                <div className="thumb">
+                                    <div className="img-clip">
+                                        <img src={service.img} alt={service.alt} loading="lazy" />
+                                    </div>
+                                    <div className="icon" aria-hidden="true">
+                                        <i className={service.icon} />
+                                    </div>
                                 </div>
-                                <h5 className="title">{service.title}</h5>
-                                <p className="disc">{service.disc}</p>
+                                <div className="body">
+                                    <h5 className="title">{service.title}</h5>
+                                    <p className="disc">{service.disc}</p>
+                                </div>
                             </div>
                         </div>
                     ))}

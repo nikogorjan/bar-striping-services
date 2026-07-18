@@ -18,6 +18,7 @@ export const metadata = {
     description:
       "Crisp lines. Safe lots. Done right. Professional parking lot striping — call 205-240-3158 for a free quote.",
     type: "website",
+    images: ["/LOGO.png"],
   },
 };
 

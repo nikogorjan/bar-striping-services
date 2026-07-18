@@ -65,10 +65,6 @@ function WhyUsBar() {
                     </div>
                     <div className="col-lg-4">
                         <div className="bar-why__panel">
-                            <div className="stripes" aria-hidden="true">
-                                <span />
-                                <span />
-                            </div>
                             <p className="quote">
                                 A freshly striped lot is the <span>first impression</span> your
                                 customers get. Make it a good one.

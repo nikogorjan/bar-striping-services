@@ -3,8 +3,10 @@ import HeroBar from "@/components/bar/HeroBar";
 import AboutBar from "@/components/bar/AboutBar";
 import ServicesBar from "@/components/bar/ServicesBar";
 import StatsBar from "@/components/bar/StatsBar";
+import WorkBar from "@/components/bar/WorkBar";
 import WhyUsBar from "@/components/bar/WhyUsBar";
 import ProcessBar from "@/components/bar/ProcessBar";
+import FaqBar from "@/components/bar/FaqBar";
 import CtaBar from "@/components/bar/CtaBar";
 import ContactBar from "@/components/bar/ContactBar";
 import FooterBar from "@/components/bar/FooterBar";
@@ -18,8 +20,10 @@ export default function Home() {
       <AboutBar />
       <ServicesBar />
       <StatsBar />
+      <WorkBar />
       <WhyUsBar />
       <ProcessBar />
+      <FaqBar />
       <CtaBar />
       <ContactBar />
       <FooterBar />

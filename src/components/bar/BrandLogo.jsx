@@ -1,23 +1,19 @@
 import React from 'react';
 
-// CSS recreation of the BAR Striping Services logo (word mark + yellow stripes).
-// Pass light for dark backgrounds, size="lg" for a bigger variant.
-function BrandLogo({ light = false, size = '', className = '' }) {
+// Real client logo (public/LOGO-nobg.png).
+// plate: white background plate so the dark logo reads on dark sections.
+// size="sm": smaller variant for the side menu.
+function BrandLogo({ plate = false, size = '', className = '' }) {
     const classes = [
         'bar-logo',
-        light ? 'bar-logo--light' : '',
-        size === 'lg' ? 'bar-logo--lg' : '',
+        plate ? 'bar-logo--plate' : '',
+        size === 'sm' ? 'bar-logo--sm' : '',
         className,
     ].filter(Boolean).join(' ');
 
     return (
         <a href="/" className={classes} aria-label="BAR Striping Services — home">
-            <span className="bar-logo__word">BAR</span>
-            <span className="bar-logo__stripes" aria-hidden="true">
-                <span />
-                <span />
-            </span>
-            <span className="bar-logo__sub">Striping Services</span>
+            <img src="/LOGO-nobg.png" alt="BAR Striping Services logo" />
         </a>
     );
 }

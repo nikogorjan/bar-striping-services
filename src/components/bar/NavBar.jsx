@@ -6,8 +6,8 @@ export const NAV_SECTIONS = [
     { to: 'home', label: 'Home' },
     { to: 'about', label: 'About' },
     { to: 'services', label: 'Services' },
+    { to: 'work', label: 'Our Work' },
     { to: 'why-us', label: 'Why Us' },
-    { to: 'process', label: 'Process' },
     { to: 'contact', label: 'Contact' },
 ];
 

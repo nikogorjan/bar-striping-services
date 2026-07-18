@@ -18,7 +18,7 @@ function SideMenuBar({ isSidebarOpen, toggleSidebar }) {
             </button>
 
             <div className="rts-sidebar-menu-desktop">
-                <BrandLogo />
+                <BrandLogo size="sm" />
 
                 <div className="body-mobile d-block">
                     <nav className="nav-main mainmenu-nav">

@@ -9,7 +9,7 @@ function FooterBar() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
-                        <BrandLogo light />
+                        <BrandLogo plate />
                         <p className="about-disc">
                             Professional parking lot striping and pavement markings.
                             Locally owned and operated — crisp lines, honest pricing,
