@@ -15,8 +15,8 @@ function AboutBar() {
                             />
                             <img
                                 className="overlap-img"
-                                src="/assets/images/bar-striping/aerial-view-of-many-colorful-cars-parked-on-parkin.webp"
-                                alt="Aerial view of a freshly striped parking lot"
+                                src="/assets/images/bar-striping/white-and-yellow-lines-of-pedestrian-crossing-at-i.webp"
+                                alt="Freshly painted white and yellow crosswalk markings"
                             />
                             <div className="bar-owner-card">
                                 <div className="avatar" aria-hidden="true">HR</div>

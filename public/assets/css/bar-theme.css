@@ -338,8 +338,8 @@ div[id] {
 .bar-hero {
   position: relative;
   background:
-    linear-gradient(rgba(18, 18, 18, 0.78), rgba(28, 28, 28, 0.68)),
-    url(../images/bar-striping/painting-white-line-road-with-marking-machine-duri.webp) center/cover no-repeat;
+    linear-gradient(rgba(15, 15, 15, 0.72), rgba(28, 28, 28, 0.56)),
+    url(../images/bar-striping/aerial-view-of-many-colorful-cars-parked-on-parkin.webp) center/cover no-repeat;
   padding: 90px 0;
   min-height: clamp(600px, 86vh, 860px);
   display: flex;
@@ -1156,6 +1156,133 @@ div[id] {
 }
 
 /*----------------------------------------------------------
+  Testimonials
+----------------------------------------------------------*/
+
+.bar-testimonials {
+  background: #f7f7f5;
+}
+.bar-testimonial-card {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #ececec;
+  padding: 34px 30px 30px;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.bar-testimonial-card:hover {
+  box-shadow: 0 20px 40px rgba(45, 45, 45, 0.08);
+  transform: translateY(-4px);
+}
+.bar-testimonial-card .quote-mark {
+  position: absolute;
+  top: 6px;
+  right: 24px;
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 1;
+  color: var(--bar-yellow);
+  opacity: 0.35;
+  pointer-events: none;
+}
+.bar-testimonial-card .stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.bar-testimonial-card .stars i {
+  color: var(--bar-yellow);
+  font-size: 14px;
+}
+.bar-testimonial-card .text {
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 0 0 24px;
+  flex: 1 1 auto;
+}
+.bar-testimonial-card .who {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-top: 1px solid #efefef;
+  padding-top: 20px;
+}
+.bar-testimonial-card .who .chip {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bar-yellow);
+  color: var(--bar-dark);
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 17px;
+  transform: skewX(-8deg);
+}
+.bar-testimonial-card .who .name {
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--bar-dark);
+  margin: 0;
+}
+.bar-testimonial-card .who .role {
+  font-size: 13px;
+  color: var(--color-body);
+  margin: 0;
+}
+
+/*----------------------------------------------------------
+  Mobile sticky call/quote bar
+----------------------------------------------------------*/
+
+.bar-mobile-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 950;
+  display: flex;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.15);
+}
+.bar-mobile-cta a {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 56px;
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.bar-mobile-cta .call {
+  background: var(--bar-dark);
+  color: var(--bar-yellow);
+}
+.bar-mobile-cta .quote {
+  background: var(--bar-yellow);
+  color: var(--bar-dark);
+}
+@media (max-width: 991px) {
+  /* keep the sticky bar from covering the footer and the
+     back-to-top button */
+  .bar-footer .copyright {
+    padding-bottom: 80px;
+  }
+  .progress-wrap {
+    bottom: 86px;
+  }
+}
+
+/*----------------------------------------------------------
   FAQ
 ----------------------------------------------------------*/
 
@@ -1393,6 +1520,32 @@ div[id] {
 @media (max-width: 575px) {
   .bar-form {
     padding: 35px 24px;
+  }
+}
+
+/*----------------------------------------------------------
+  Map band (above footer)
+----------------------------------------------------------*/
+
+.bar-map {
+  position: relative;
+  line-height: 0;
+  border-top: 6px solid var(--bar-yellow);
+}
+.bar-map iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  display: block;
+  filter: grayscale(1) contrast(1.05);
+  transition: filter 0.4s ease;
+}
+.bar-map:hover iframe {
+  filter: grayscale(0);
+}
+@media (max-width: 767px) {
+  .bar-map iframe {
+    height: 300px;
   }
 }
 

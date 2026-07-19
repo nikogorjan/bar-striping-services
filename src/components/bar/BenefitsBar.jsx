@@ -60,8 +60,8 @@ function BenefitsBar() {
                         <div className="bar-benefits__visual pl--40 pl_md--0 pl_sm--0 mt_md--40 mt_sm--40">
                             <img
                                 className="main-img"
-                                src="/assets/images/bar-striping/aerial-view-of-many-colorful-cars-parked-on-parkin.webp"
-                                alt="Aerial view of a freshly striped commercial parking lot"
+                                src="/assets/images/bar-striping/top-down-of-car-park-at-outdoor.webp"
+                                alt="Top-down view of a cleanly striped parking lot layout"
                                 loading="lazy"
                             />
                             <img

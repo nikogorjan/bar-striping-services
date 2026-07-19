@@ -9,10 +9,13 @@ import BenefitsBar from "@/components/bar/BenefitsBar";
 import SignsBar from "@/components/bar/SignsBar";
 import WhyUsBar from "@/components/bar/WhyUsBar";
 import ProcessBar from "@/components/bar/ProcessBar";
+import TestimonialsBar from "@/components/bar/TestimonialsBar";
 import FaqBar from "@/components/bar/FaqBar";
+import MobileCtaBar from "@/components/bar/MobileCtaBar";
 import ServiceAreaBar, { SERVICE_AREAS } from "@/components/bar/ServiceAreaBar";
 import CtaBar from "@/components/bar/CtaBar";
 import ContactBar from "@/components/bar/ContactBar";
+import MapBar from "@/components/bar/MapBar";
 import FooterBar from "@/components/bar/FooterBar";
 import BackToTop from "@/components/BackToTop";
 
@@ -76,11 +79,14 @@ export default function Home() {
       <SignsBar />
       <WhyUsBar />
       <ProcessBar />
+      <TestimonialsBar />
       <FaqBar />
       <ServiceAreaBar />
       <CtaBar />
       <ContactBar />
+      <MapBar />
       <FooterBar />
+      <MobileCtaBar />
       <BackToTop />
     </div>
   );
