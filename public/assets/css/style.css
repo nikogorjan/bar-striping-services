@@ -9223,7 +9223,7 @@ body {
 .bg-footer-one::after {
   content: "";
   position: absolute;
-  background-image: url(../images/footer/h1-shape/01.svg);
+  background-image: none;
   height: 450px;
   width: 450px;
   right: -3%;
@@ -9248,7 +9248,7 @@ body {
 .bg-footer-one::before {
   content: "";
   position: absolute;
-  background-image: url(../images/footer/h1-shape/02.png);
+  background-image: none;
   height: 800px;
   width: 823px;
   left: -16%;
@@ -9279,7 +9279,7 @@ body {
 }
 .bg-footer-one .bg-shape-f1::after {
   position: absolute;
-  background-image: url(../images/footer/h1-shape/03.png);
+  background-image: none;
   content: "";
   height: 500px;
   width: 523px;
@@ -14613,7 +14613,7 @@ body.sal-disabled [data-sal|=flip] {
 }
 
 #anywhere-home {
-  cursor: url(../images/banner/shape/close.png), auto;
+  cursor: none, auto;
   background: #0e1013;
   position: fixed;
   width: 100%;
@@ -15207,7 +15207,7 @@ body.home-eleven #menu-btn:hover {
 }
 
 .breadcrumb-bg {
-  background-image: url(../images/breadcrumb/01.jpg);
+  background-image: none;
 }
 
 .rts-breadcrumb-area {
@@ -16525,20 +16525,20 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 
 .banner-one .swiper-wrapper .swiper-slide {
-  background-image: url(../images/banner/banner-01.jpg);
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .banner-one .swiper-wrapper .swiper-slide.two {
-  background-image: url(../images/banner/banner-02.jpg);
+  background-image: none;
 }
 .banner-one .swiper-wrapper .swiper-slide.three {
-  background-image: url(../images/banner/banner-03.jpg);
+  background-image: none;
 }
 
 .offwrap {
-  cursor: url(../images/banner/shape/close.png), auto;
+  cursor: none, auto;
   width: 100%;
   left: 100%;
   transition: all 0.8s ease-out 0s;
@@ -16921,7 +16921,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 .banner-three.banner-four .shape::after {
   position: absolute;
   content: "";
-  background-image: url(../images/banner/shape/bg.png);
+  background-image: none;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -17076,7 +17076,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   right: 0;
 }
 .banner-three.banner-four.banner-five {
-  background: url(../images/banner/banner-bg5.jpg);
+  background: none;
   background-position: center;
   position: relative;
 }
@@ -17186,27 +17186,27 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 
 .bg_banner-three {
-  background-image: url(../images/banner/banner-04.jpg);
+  background-image: none;
   position: relative;
   z-index: 1;
   width: 100%;
 }
 .bg_banner-three.slide-2 {
-  background-image: url(../images/banner/banner-08.jpg);
+  background-image: none;
 }
 .bg_banner-three.slide-3 {
-  background-image: url(../images/banner/banner-09.jpg);
+  background-image: none;
 }
 .bg_banner-three.eight {
-  background-image: url(../images/banner/it-3.webp);
+  background-image: none;
   padding-top: 400px;
 }
 .bg_banner-three.eight-2 {
-  background-image: url(../images/banner/it-1.webp);
+  background-image: none;
   padding-top: 400px;
 }
 .bg_banner-three.eight-3 {
-  background-image: url(../images/banner/it-2.webp);
+  background-image: none;
   padding-top: 400px;
 }
 .bg_banner-three::after {
@@ -17411,7 +17411,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 
 .banner-two {
-  background-image: url(../images/banner/banner-05.png);
+  background-image: none;
   height: 850px;
   background-repeat: no-repeat;
   position: relative;
@@ -17425,10 +17425,10 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   }
 }
 .banner-two.slide-2 {
-  background-image: url(../images/banner/banner-06.png);
+  background-image: none;
 }
 .banner-two.slide-3 {
-  background-image: url(../images/banner/banner-07.png);
+  background-image: none;
 }
 
 .banner-two-content {
@@ -17562,7 +17562,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 .banner-three::before {
   position: absolute;
   content: "";
-  background-image: url(../images/banner/shape/04.png);
+  background-image: none;
   height: 100%;
   width: 650px;
   background-size: cover;
@@ -17614,7 +17614,7 @@ p.disc.banner-para {
 }
 
 .banner-human-bg {
-  background-image: url(../images/banner/banner-11.png);
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   height: 1150px;
@@ -17786,7 +17786,7 @@ p.disc.banner-para {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-image: url(../images/banner/banner-10.jpg);
+  background-image: none;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17984,14 +17984,14 @@ p.disc.banner-para {
 }
 
 .bg-shape-wrapper-main {
-  background-image: url(../images/bg/bg-shape-1.png);
+  background-image: none;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
 
 .bg-shape-wrapper-two {
-  background-image: url(../images/bg/bg-shape-2.png);
+  background-image: none;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -18015,7 +18015,7 @@ header.header-home-nine {
 }
 
 .banner-area-nine {
-  background-image: url(../images/bg/03.jpg);
+  background-image: none;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -18180,7 +18180,7 @@ header.header-home-nine {
 }
 
 .banner-bg-10 {
-  background-image: url(../images/bg/04.jpg);
+  background-image: none;
   height: 1014px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -18505,7 +18505,7 @@ header.header-home-nine {
 }
 
 .banner-bg-11 {
-  background-image: url(../images/banner/banner-11.jpg);
+  background-image: none;
   height: 980px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -18525,7 +18525,7 @@ header.header-home-nine {
 }
 
 .banner-bg-12 {
-  background-image: url(../images/banner/banner-12.jpg);
+  background-image: none;
   height: 980px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -18545,7 +18545,7 @@ header.header-home-nine {
 }
 
 .banner-bg-13 {
-  background-image: url(../images/banner/banner-14.jpg);
+  background-image: none;
   height: 980px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -18776,7 +18776,7 @@ header.header-home-nine {
 }
 
 .bg_banner-13 {
-  background-image: url(../images/banner/banner-12.jpg);
+  background-image: none;
   height: 830px;
 }
 @media only screen and (max-width: 767px) {
@@ -18786,7 +18786,7 @@ header.header-home-nine {
 }
 
 .banner-bg-14 {
-  background-image: url(../images/banner/banner-12.jpg);
+  background-image: none;
   height: 980px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -18872,7 +18872,7 @@ body.thirteen-body .title-area span {
   background: #4a3bca;
 }
 .thirteen-body .case-10-swiper-main-wrapper .swiper .swiper-slide.swiper-slide-active::before {
-  background-image: url(../images/product/13.png);
+  background-image: none;
 }
 @media only screen and (max-width: 767px) {
   .thirteen-body .case-10-swiper-main-wrapper .swiper .swiper-slide.swiper-slide-active::before {
@@ -18950,7 +18950,7 @@ body.thirteen-body .title-area span {
   position: absolute;
   height: 150px;
   width: 150px;
-  background-image: url(../images/about/shape/01.png);
+  background-image: none;
   background-repeat: no-repeat;
   top: 32%;
   animation: jump-1 8s linear infinite;
@@ -18970,7 +18970,7 @@ body.thirteen-body .title-area span {
   position: absolute;
   height: 150px;
   width: 150px;
-  background-image: url(../images/about/shape/02.png);
+  background-image: none;
   background-repeat: no-repeat;
   top: 60%;
   right: -2%;
@@ -19180,7 +19180,7 @@ body.thirteen-body .title-area span {
 }
 
 .about-two-bg {
-  background-image: url(../images/about/bg-01.jpg);
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19584,7 +19584,7 @@ body.thirteen-body .title-area span {
 }
 .about-company-thumbnail::after {
   position: absolute;
-  background-image: url(../images/about/shape/03.png);
+  background-image: none;
   content: "";
   height: 517.43px;
   min-width: 712px;
@@ -19644,7 +19644,7 @@ body.thirteen-body .title-area span {
   contain: "";
   height: 235.7px;
   width: 213.54px;
-  background-image: url(../images/about/shape/04.png);
+  background-image: none;
   background-repeat: no-repeat;
   animation: jump-2 5s linear infinite;
   z-index: -1;
@@ -20365,7 +20365,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .background-service {
-  background-image: url(../images/service/bg-01.jpg);
+  background-image: none;
   padding: 70px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20376,7 +20376,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   }
 }
 .background-service.service-three {
-  background-image: url(../images/service/bg-04.jpg);
+  background-image: none;
   padding: 70px 195px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -20677,7 +20677,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .service-two-bg {
-  background-image: url(../images/service/bg-02.jpg);
+  background-image: none;
 }
 
 .service-two-inner {
@@ -20810,7 +20810,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .accordion-service-bg {
-  background-image: url(../images/service/bg-03.jpg);
+  background-image: none;
 }
 @media only screen and (max-width: 1199px) {
   .accordion-service-bg {
@@ -20927,7 +20927,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   content: "";
   position: absolute;
   left: 0;
-  background-image: url(../images/service/icon/dot.png);
+  background-image: none;
   height: 20px;
   width: 20px;
   left: -11.5%;
@@ -21053,7 +21053,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   content: "";
   position: absolute;
   left: 0;
-  background-image: url(../images/service/icon/dot.png);
+  background-image: none;
   height: 20px;
   width: 20px;
   left: -11.5%;
@@ -21264,7 +21264,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-service-h2 {
-  background-image: url(../images/service/bg-02.jpg);
+  background-image: none;
   margin-top: -200px;
   padding-top: 320px;
   background-size: cover;
@@ -21870,7 +21870,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .single-inner-service-ten {
-  background-image: url(../images/service/17.png);
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 40px;
@@ -22179,7 +22179,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .thirteen-body .rts-accordion-area-bg {
-  background-image: url(../images/service/21.jpg);
+  background-image: none;
 }
 .thirteen-body .accordion-service-bg {
   background-image: none;
@@ -22226,7 +22226,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .cta-one-bg {
-  background-image: url(../images/cta/01.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-color: #DF0A0A;
   background-blend-mode: multiply;
@@ -22237,7 +22237,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .rts-cta-bg {
-  background-image: url(../images/cta/03.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22302,7 +22302,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-call-to-action-two {
-  background-image: url(../images/cta/02.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-color: var(--color-primary-3);
   background-blend-mode: multiply;
@@ -22355,7 +22355,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .cta-bg-h2 {
-  background-image: url(../images/cta/bg-01.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22458,7 +22458,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .rts-callto-acation-area5 {
-  background-image: url(../images/cta/05.jpg);
+  background-image: none;
   background-color: rgba(0, 0, 0, 0.8);
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -22588,7 +22588,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .cta-ten-bg {
-  background-image: url(../images/testimonials/bg-04.jpg);
+  background-image: none;
 }
 
 .cta-main-wrapper-ten .title {
@@ -22904,7 +22904,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .business-case-bg-2 {
-  background-image: url(../images/business-case/bg-02.jpg);
+  background-image: none;
   background-position: top center;
   background-repeat: no-repeat;
   width: 100%;
@@ -22925,7 +22925,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .rts-business-case-s-2::after {
   content: "";
   position: absolute;
-  background-image: url(../images/business-case/icon/shape-1.png);
+  background-image: none;
   height: 100%;
   width: 100%;
   top: -64%;
@@ -22977,7 +22977,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .rts-business-case-s-2 .inner span::after {
   position: absolute;
   content: "";
-  background-image: url(../images/business-case/icon/02.png);
+  background-image: none;
   height: 58px;
   width: 58px;
   bottom: -85px;
@@ -23554,7 +23554,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .rts-business-case-s-2.style-home-7S::after {
   content: "";
   position: absolute;
-  background-image: url(../images/business-case/icon/shape-2.png);
+  background-image: none;
   height: 100%;
   width: 100%;
   top: -64%;
@@ -23572,7 +23572,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .rts-business-case-s-2.style-home-7S .inner span::after {
   position: absolute;
   content: "";
-  background-image: url(../images/business-case/icon/03.png);
+  background-image: none;
   height: 58px;
   width: 58px;
   bottom: -85px;
@@ -23643,7 +23643,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .counter-bg {
-  background-image: url(../images/counterup/bg-01.jpg);
+  background-image: none;
   height: 762px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23823,7 +23823,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .gallery-bg {
-  background-image: url(../images/gallery/01.svg);
+  background-image: none;
   position: relative;
   margin-top: -23%;
 }
@@ -23834,7 +23834,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-right-gallery {
-  background-image: url(../images/gallery/gallery-bg-1.jpg);
+  background-image: none;
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -23868,7 +23868,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   width: 350px;
   left: -40%;
   position: absolute;
-  background-image: url(../images/gallery/shape.png);
+  background-image: none;
   opacity: 0.1;
   animation: jump-1 2s linear infinite;
 }
@@ -24335,7 +24335,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .business-case-bg {
-  background-image: url(../images/business-case/bg-01.jpg);
+  background-image: none;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -24439,7 +24439,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   content: "";
   left: -15%;
   bottom: -83%;
-  background-image: url(../images/business-case/icon/01.png);
+  background-image: none;
   height: 58px;
   width: 58px;
 }
@@ -24458,7 +24458,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-project-three {
-  background-image: url(../images/product/bg/01.jpg);
+  background-image: none;
   background-repeat: no-repeat;
 }
 
@@ -24496,7 +24496,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   margin-bottom: 50px;
 }
 .title-area-project-w-in .bg-email {
-  background-image: url(../images/product/bg/sm-1.jpg);
+  background-image: none;
   background-size: cover;
   margin-right: -2px;
   background-repeat: no-repeat;
@@ -24549,7 +24549,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-input-project {
-  background-image: url(../images/product/bg/02.jpg);
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: -192px;
@@ -24994,7 +24994,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .large-case-studies-11 a.thumbnail::before {
   position: absolute;
   content: "";
-  background-image: url(../images/about/06.png);
+  background-image: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
@@ -25048,7 +25048,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   transform: translate(-50%, -50%) scale(0);
   height: 130px;
   width: 130px;
-  background-image: url(../images/product/12.png);
+  background-image: none;
   transition: 1s;
   pointer-events: none;
 }
@@ -25073,7 +25073,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   transform: translate(-50%, -50%) scale(1);
   height: 130px;
   width: 130px;
-  background-image: url(../images/product/12.png);
+  background-image: none;
 }
 
 .title-area-client {
@@ -25202,7 +25202,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .client-bg {
-  background-image: url(../images/client/bg.jpg);
+  background-image: none;
 }
 .client-bg .client-two-wrapper {
   display: flex;
@@ -25247,7 +25247,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-team {
-  background-image: url(../images/team/bg-01.jpg);
+  background-image: none;
   height: 1029px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -25895,7 +25895,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .rts-team-bg-home-7 {
-  background-image: url(../images/team/bg-02.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -26003,7 +26003,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 
 .team-style-ten {
   padding: 30px;
-  background-image: url(../images/testimonials/13.png);
+  background-image: none;
   object-fit: contain;
   text-align: center;
   border-radius: 6px;
@@ -26161,7 +26161,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   content: "";
   height: 763px;
   width: 763px;
-  background-image: url(../images/feature/shape/01.png);
+  background-image: none;
   left: -15%;
   top: -50%;
   z-index: -1;
@@ -26272,7 +26272,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   background-repeat: no-repeat;
   left: 13%;
   bottom: -14%;
-  background-image: url(../images/testimonials/shape/01.svg);
+  background-image: none;
   animation: jump-1 5s linear infinite;
 }
 .rts-test-one-image-inner::before {
@@ -26284,7 +26284,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   background-repeat: no-repeat;
   top: 8%;
   left: -12%;
-  background-image: url(../images/testimonials/shape/02.png);
+  background-image: none;
 }
 
 .testimonial-bottom-one {
@@ -26399,7 +26399,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   height: 200px;
   width: 200px;
   top: 3%;
-  background-image: url(../images/testimonials/shape/03.png);
+  background-image: none;
   background-size: cover;
   animation: jump-2 5s linear infinite;
 }
@@ -26451,7 +26451,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   position: absolute;
   right: -20%;
   content: "";
-  background-image: url(../images/testimonials/icon/01.png);
+  background-image: none;
   top: 50%;
   transform: translateY(-50%);
   height: 35px;
@@ -26478,7 +26478,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-client-r-h2 {
-  background-image: url(../images/testimonials/bg-01.jpg);
+  background-image: none;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -26578,13 +26578,13 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(../images/testimonials/icon/02.png);
+  background-image: none;
   height: 40px;
   width: 40px;
   background-size: cover;
 }
 .rts-client-reviews-h2 .review-header .thumbnail.thumb::after {
-  background-image: url(../images/testimonials/icon/01.png);
+  background-image: none;
 }
 .rts-client-reviews-h2 .review-header .discription {
   margin-left: 30px;
@@ -26707,7 +26707,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg_testimonials-h2 {
-  background-image: url(../images/testimonials/bg-02.jpg);
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -26915,7 +26915,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .progress-area-h7 .single-progress-inner .progress.red::before {
   position: absolute;
   content: "";
-  background-image: url(../images/appoinment/04.png);
+  background-image: none;
   left: 68%;
   top: 67%;
   transform: translate(-50%, -50%);
@@ -26925,10 +26925,10 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   background-repeat: no-repeat;
 }
 .progress-area-h7 .single-progress-inner .progress.red.blue::before {
-  background-image: url(../images/appoinment/05.png) !important;
+  background-image: none !important;
 }
 .progress-area-h7 .single-progress-inner .progress.red.pink::before {
-  background-image: url(../images/appoinment/06.png) !important;
+  background-image: none !important;
 }
 .progress-area-h7 .single-progress-inner .progress::after {
   border: 8px solid #fff;
@@ -26952,7 +26952,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(../images/testimonials/icon/03.png);
+  background-image: none;
   height: 40px;
   width: 40px;
   background-size: cover;
@@ -26963,7 +26963,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-feedback-seven {
-  background-image: url(../images/testimonials/bg-03.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27304,7 +27304,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .pricing-wrapper-one {
-  background-image: url(../images/pricing/bg-01.jpg);
+  background-image: none;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27430,7 +27430,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-pricing-bg-h2 {
-  background-image: url(../images/pricing/bg-02.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28859,7 +28859,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .single-blog-style-ten {
   display: flex;
   align-items: center;
-  background-image: url(../images/blog/bg-1.png);
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0px 15px 40px 0px rgba(13, 24, 53, 0.05);
@@ -29074,7 +29074,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .single-circle-progress-inner {
-  background-image: url(../images/appoinment/01.png);
+  background-image: none;
   height: 320px;
   background-repeat: no-repeat;
   width: 100%;
@@ -29312,7 +29312,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   background: #F6F6F6;
 }
 .background-contact-appoinment .contact-form-area-one {
-  background-image: url(../images/appoinment/03.png);
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center left;
@@ -29395,7 +29395,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   content: "";
   right: -9%;
   top: -33%;
-  background-image: url(../images/faq/shape.png);
+  background-image: none;
   height: 736px;
   width: 736px;
   background-size: contain;
@@ -29408,7 +29408,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
     content: "";
     right: -22%;
     top: -16%;
-    background-image: url(../images/faq/shape.png);
+    background-image: none;
     height: 500px;
     width: 500px;
     background-size: contain;
@@ -29422,7 +29422,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
     content: "";
     right: -22%;
     top: -10%;
-    background-image: url(../images/faq/shape.png);
+    background-image: none;
     height: 300px;
     width: 300px;
     background-size: contain;
@@ -29435,7 +29435,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   content: "";
   left: -14%;
   top: 11%;
-  background-image: url(../images/faq/shape-2.png);
+  background-image: none;
   width: 698px;
   height: 698px;
   background-size: contain;
@@ -29647,7 +29647,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .rts-faq-bg {
-  background-image: url(../images/faq/bg-01.jpg);
+  background-image: none;
 }
 
 .faq-two-inner .title-area-faq .sub {
@@ -29763,7 +29763,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .rts-contact-area.contact-one::after {
   position: absolute;
   content: "";
-  background-image: url(../images/contact/shape/01.png);
+  background-image: none;
   right: 10%;
   top: -8%;
   height: 190px;
@@ -29951,7 +29951,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .contact-four::before {
   content: "";
   position: absolute;
-  background-image: url(../images/contact/shape/02.png) !important;
+  background-image: none !important;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100px;
@@ -29966,7 +29966,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   }
 }
 .contact-four::after {
-  background-image: url(../images/contact/shape/02.png) !important;
+  background-image: none !important;
   background-repeat: no-repeat;
   background-size: cover;
   right: 8% !important;
@@ -30063,7 +30063,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .rts-map-area::after {
   position: absolute;
   content: "";
-  background-image: url(../images/contact/shape/01.png);
+  background-image: none;
   height: 105px;
   width: 105px;
   left: 53px;
@@ -30471,7 +30471,7 @@ p.disc {
 }
 
 .working-process-bg {
-  background-image: url(../images/working-step/bg-01.jpg);
+  background-image: none;
   max-width: 1680px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -30614,7 +30614,7 @@ p.disc {
 }
 
 .working-process-area2 {
-  background: url("../images/working-step/bg-02.jpg");
+  background: none;
   max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30712,7 +30712,7 @@ p.disc {
 }
 
 .bg-working-steps {
-  background-image: url(../images/working-step/bg-03.jpg);
+  background-image: none;
 }
 
 .single-steps-area-nine {
@@ -30750,7 +30750,7 @@ p.disc {
   width: 19px;
   transform: translateX(-50%);
   height: 19px;
-  background-image: url(../images/working-step/01.png);
+  background-image: none;
 }
 .single-steps-area-nine .body {
   padding: 54px 33px 50px 33px;
@@ -31286,7 +31286,7 @@ p.disc {
 }
 
 .background-cta {
-  background-image: url(../images/footer/callto-action.png);
+  background-image: none;
   background-repeat: no-repeat;
   background-color: #DF0A0A;
   background-blend-mode: multiply;
@@ -31666,7 +31666,7 @@ p.disc {
 }
 
 .footer-bg-2 {
-  background: url(../images/footer/footer-bg-2.jpg);
+  background: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31860,7 +31860,7 @@ p.disc {
 }
 
 .footer-bg-two {
-  background: url(../images/footer/footer-bg-3.png);
+  background: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32287,4 +32287,3 @@ p.disc {
   background: #F6F6F6;
 }
 
-/*# sourceMappingURL=style.css.map */

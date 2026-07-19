@@ -1,9 +1,6 @@
 import { Archivo } from "next/font/google";
 
 import "../../public/assets/css/plugins/fontawesome-5.css";
-import "../../public/assets/css/plugins/animate.min.css";
-import "../../public/assets/css/plugins/unicons.css";
-
 import "../../public/assets/css/vendor/bootstrap.min.css";
 import "../../public/assets/css/style.css";
 import "../../public/assets/css/bar-theme.css";

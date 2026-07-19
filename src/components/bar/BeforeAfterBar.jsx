@@ -7,7 +7,7 @@ function BeforeAfterBar() {
     const [pos, setPos] = useState(50);
 
     return (
-        <section className="bar-ba rts-section-gap" id="before-after">
+        <section className="bar-ba rts-section-gapTop" id="before-after">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
