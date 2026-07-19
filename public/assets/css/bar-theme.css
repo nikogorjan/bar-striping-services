@@ -58,6 +58,15 @@ div[id] {
   margin-bottom: 18px !important;
 }
 
+/* buttons: square edges to match the sharp/skewed brand style
+   (template default is 15px rounded corners) */
+.rts-btn {
+  border-radius: 0 !important;
+}
+.side-bar button i {
+  border-radius: 0;
+}
+
 /* buttons: yellow with dark text (template default is white text) */
 .rts-btn.btn-primary {
   background: var(--bar-yellow);
