@@ -55,6 +55,7 @@ div[id] {
   padding: 5px 16px;
   letter-spacing: 0.08em;
   transform: skewX(-12deg);
+  margin-bottom: 18px !important;
 }
 
 /* buttons: yellow with dark text (template default is white text) */
@@ -744,6 +745,53 @@ div[id] {
 }
 
 /*----------------------------------------------------------
+  Service details — icon-free editorial section
+----------------------------------------------------------*/
+
+.bar-details {
+  background: #f7f7f5;
+}
+.bar-details .lead-disc {
+  font-size: 17px;
+  line-height: 1.75;
+  max-width: 680px;
+  margin: 0;
+}
+.bar-detail-col {
+  height: 100%;
+  border-top: 4px solid var(--bar-yellow);
+  padding-top: 26px;
+}
+.bar-detail-col .title {
+  font-size: 21px;
+  margin-bottom: 14px;
+  color: var(--bar-dark);
+}
+.bar-detail-col p {
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 0;
+}
+.bar-details__cta {
+  margin: 50px 0 0;
+  padding-top: 30px;
+  border-top: 1px solid #e5e5e2;
+  font-size: 16px;
+  color: var(--bar-dark);
+}
+.bar-details__cta a {
+  color: var(--bar-dark);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 3px solid var(--bar-yellow);
+  padding-bottom: 1px;
+  transition: var(--transition);
+}
+.bar-details__cta a:hover {
+  background: var(--bar-yellow);
+}
+
+/*----------------------------------------------------------
   Industries we serve
 ----------------------------------------------------------*/
 
@@ -928,6 +976,58 @@ div[id] {
 }
 .bar-area .area-note a:hover {
   text-decoration: underline;
+}
+
+/*----------------------------------------------------------
+  Re-striping signs — icon-free editorial section
+----------------------------------------------------------*/
+
+.bar-signs {
+  background: #f7f7f5;
+}
+.bar-signs .lead-disc {
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0 0 28px;
+}
+.bar-signs__cta {
+  font-size: 16px;
+  color: var(--bar-dark);
+  margin: 0;
+}
+.bar-signs__cta a {
+  color: var(--bar-dark);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 3px solid var(--bar-yellow);
+  padding-bottom: 1px;
+  transition: var(--transition);
+}
+.bar-signs__cta a:hover {
+  background: var(--bar-yellow);
+}
+.bar-signs__list .sign-item {
+  border-left: 4px solid var(--bar-yellow);
+  background: #fff;
+  padding: 20px 26px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+.bar-signs__list .sign-item:last-child {
+  margin-bottom: 0;
+}
+.bar-signs__list .sign-item:hover {
+  box-shadow: 0 12px 26px rgba(45, 45, 45, 0.07);
+}
+.bar-signs__list .sign-item p {
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 0;
+}
+.bar-signs__list .sign-item strong {
+  color: var(--bar-dark);
+  font-family: var(--font-secondary);
+  font-weight: 800;
 }
 
 /*----------------------------------------------------------
@@ -1391,6 +1491,56 @@ div[id] {
   .bar-footer .copyright {
     margin-top: 20px;
   }
+}
+
+/*----------------------------------------------------------
+  Back-to-top scroll indicator
+  (template default: white circle + fat red arc — restyled
+  to a dark button with a slim yellow progress ring)
+----------------------------------------------------------*/
+
+.progress-wrap {
+  height: 52px;
+  width: 52px;
+  background: var(--bar-dark);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
+}
+.progress-wrap::after {
+  /* Font Awesome arrow instead of the template's unicons glyph */
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f062";
+  color: var(--bar-yellow);
+  border: none !important;
+  height: 52px;
+  width: 52px;
+  line-height: 52px;
+  font-size: 18px;
+}
+.progress-wrap:hover::after {
+  content: "\f062";
+  border: none !important;
+}
+.progress-wrap::before {
+  display: none !important;
+}
+.progress-wrap svg {
+  background: transparent !important;
+  display: block;
+}
+.progress-wrap svg.progress-circle path {
+  stroke: var(--bar-yellow);
+  stroke-width: 8px;
+  stroke-linecap: round;
+}
+.progress-wrap:hover {
+  background: var(--bar-yellow);
+}
+.progress-wrap:hover::after {
+  color: var(--bar-dark);
+}
+.progress-wrap:hover svg.progress-circle path {
+  stroke: var(--bar-dark);
 }
 
 /*----------------------------------------------------------
