@@ -13,9 +13,10 @@ function HeaderBar() {
     const [isSticky, setIsSticky] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-            setIsSticky(window.scrollY > 150);
+            setIsSticky(window.scrollY > 40);
         };
-        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+        window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -61,54 +62,49 @@ function HeaderBar() {
                 </div>
                 <div className="header-main-one bg-white">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
-                                <div className="thumbnail">
-                                    <BrandLogo />
-                                </div>
-                            </div>
-                            <div className="col-xl-9 col-lg-8 col-md-8 col-sm-8 col-6">
-                                <div className="main-header">
-                                    <NavBar />
-                                    <div className="button-area">
-                                        <a href="tel:+12052403158" className="bar-call-btn">
-                                            <span className="icon"><i className="fas fa-phone-alt" /></span>
-                                            <span className="info">
-                                                <span>Call for a free quote</span>
-                                                <strong>205-240-3158</strong>
-                                            </span>
-                                        </a>
-                                        <a
-                                            href="#contact"
-                                            className="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn d-none d-sm-block"
-                                        >
-                                            Get Quote
-                                        </a>
-                                        <button
-                                            id="menu-btn"
-                                            aria-label="Open menu"
-                                            className="menu rts-btn btn-primary-alta ml--20 ml_sm--5 d-xl-none"
-                                            onClick={() => toggleSidebar()}
-                                        >
-                                            <img
-                                                className="menu-dark"
-                                                src="/assets/images/icon/menu.png"
-                                                alt="Menu-icon"
-                                            />
-                                            <img
-                                                className="menu-light"
-                                                src="/assets/images/icon/menu-light.png"
-                                                alt="Menu-icon"
-                                            />
-                                        </button>
-                                    </div>
-                                </div>
+                        <div className="bar-nav-row">
+                            <BrandLogo />
+                            <NavBar />
+                            <div className="button-area">
+                                <a href="tel:+12052403158" className="bar-call-btn">
+                                    <span className="icon"><i className="fas fa-phone-alt" /></span>
+                                    <span className="info">
+                                        <span>Call for a free quote</span>
+                                        <strong>205-240-3158</strong>
+                                    </span>
+                                </a>
+                                <a
+                                    href="#contact"
+                                    className="rts-btn btn-primary quote-btn d-none d-sm-block"
+                                >
+                                    Get Quote
+                                </a>
+                                <button
+                                    id="menu-btn"
+                                    aria-label="Open menu"
+                                    className="menu rts-btn btn-primary-alta d-xl-none"
+                                    onClick={() => toggleSidebar()}
+                                >
+                                    <img
+                                        className="menu-dark"
+                                        src="/assets/images/icon/menu.png"
+                                        alt="Menu-icon"
+                                    />
+                                    <img
+                                        className="menu-light"
+                                        src="/assets/images/icon/menu-light.png"
+                                        alt="Menu-icon"
+                                    />
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
             {/* End header area */}
+
+            {/* reserves the fixed header's space in the page flow */}
+            <div className="bar-header-spacer" aria-hidden="true" />
 
             <SideMenuBar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         </div>

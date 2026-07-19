@@ -6,7 +6,7 @@ export const NAV_SECTIONS = [
     { to: 'home', label: 'Home' },
     { to: 'about', label: 'About' },
     { to: 'services', label: 'Services' },
-    { to: 'work', label: 'Our Work' },
+    { to: 'industries', label: 'Industries' },
     { to: 'why-us', label: 'Why Us' },
     { to: 'contact', label: 'Contact' },
 ];
@@ -23,7 +23,7 @@ function NavBar() {
                             to={item.to}
                             spy={true}
                             smooth={true}
-                            offset={-150}
+                            offset={-85}
                             duration={700}
                         >
                             {item.label}

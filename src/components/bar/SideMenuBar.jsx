@@ -31,7 +31,7 @@ function SideMenuBar({ isSidebarOpen, toggleSidebar }) {
                                         to={item.to}
                                         spy={true}
                                         smooth={true}
-                                        offset={-100}
+                                        offset={-85}
                                         duration={700}
                                     >
                                         {item.label}

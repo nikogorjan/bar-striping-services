@@ -55,7 +55,7 @@ function ServicesBar() {
                     <div className="col-12">
                         <div className="rts-title-area service text-center">
                             <p className="pre-title">Our Services</p>
-                            <h2 className="title">Striping Services That Last</h2>
+                            <h2 className="title">Parking Lot Striping Services That Last</h2>
                         </div>
                     </div>
                 </div>
