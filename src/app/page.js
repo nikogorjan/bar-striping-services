@@ -13,6 +13,7 @@ import ProcessBar from "@/components/bar/ProcessBar";
 import TestimonialsBar from "@/components/bar/TestimonialsBar";
 import FaqBar from "@/components/bar/FaqBar";
 import MobileCtaBar from "@/components/bar/MobileCtaBar";
+import ScrollReveal from "@/components/bar/ScrollReveal";
 import ServiceAreaBar, { SERVICE_AREAS } from "@/components/bar/ServiceAreaBar";
 import CtaBar from "@/components/bar/CtaBar";
 import ContactBar from "@/components/bar/ContactBar";
@@ -89,6 +90,7 @@ export default function Home() {
       <MapBar />
       <FooterBar />
       <MobileCtaBar />
+      <ScrollReveal />
       <BackToTop />
     </div>
   );

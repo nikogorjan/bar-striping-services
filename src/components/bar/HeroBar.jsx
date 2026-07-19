@@ -4,6 +4,7 @@ import React from 'react';
 function HeroBar() {
     return (
         <section className="bar-hero" id="home">
+            <div className="bar-hero__bg" aria-hidden="true" />
             <div className="container">
                 <div className="bar-hero__content">
                     <p className="pre-title">Crisp Lines. Safe Lots.</p>
