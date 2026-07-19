@@ -72,7 +72,7 @@ function ServicesBar() {
                                     </div>
                                 </div>
                                 <div className="body">
-                                    <h5 className="title">{service.title}</h5>
+                                    <h3 className="title">{service.title}</h3>
                                     <p className="disc">{service.disc}</p>
                                 </div>
                             </div>

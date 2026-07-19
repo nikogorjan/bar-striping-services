@@ -40,7 +40,7 @@ function ProcessBar() {
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12" key={step.num}>
                             <div className="bar-step">
                                 <span className="num">{step.num}</span>
-                                <h6 className="title">{step.title}</h6>
+                                <h3 className="title">{step.title}</h3>
                                 <p>{step.disc}</p>
                             </div>
                         </div>

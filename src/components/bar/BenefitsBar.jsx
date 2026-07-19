@@ -48,7 +48,7 @@ function BenefitsBar() {
                                             <i className={item.icon} />
                                         </div>
                                         <div>
-                                            <h6 className="title">{item.title}</h6>
+                                            <h3 className="title">{item.title}</h3>
                                             <p>{item.disc}</p>
                                         </div>
                                     </div>

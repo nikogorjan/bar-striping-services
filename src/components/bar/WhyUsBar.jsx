@@ -55,7 +55,7 @@ function WhyUsBar() {
                                             <i className={reason.icon} />
                                         </div>
                                         <div>
-                                            <h6 className="title">{reason.title}</h6>
+                                            <h3 className="title">{reason.title}</h3>
                                             <p>{reason.disc}</p>
                                         </div>
                                     </div>

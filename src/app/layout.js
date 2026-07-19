@@ -1,4 +1,5 @@
 import { Archivo } from "next/font/google";
+import { SITE_URL } from "@/lib/site";
 
 import "../../public/assets/css/plugins/fontawesome-5.css";
 import "../../public/assets/css/vendor/bootstrap.min.css";
@@ -13,6 +14,7 @@ const archivo = Archivo({
 });
 
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Parking Lot Striping | BAR Striping Services | Free Quotes",
   description:
     "Professional parking lot striping, re-striping, ADA-compliant markings, fire lanes & warehouse floor striping in the Birmingham, AL area. Locally owned, free quotes — call 205-240-3158.",
@@ -26,6 +28,9 @@ export const metadata = {
     "pavement markings",
     "parking lot striping Birmingham AL",
   ],
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/assets/images/logo/bar-favicon.svg",
   },
@@ -33,8 +38,27 @@ export const metadata = {
     title: "BAR Striping Services | Parking Lot Striping",
     description:
       "Crisp lines. Safe lots. Done right. Professional parking lot striping — call 205-240-3158 for a free quote.",
+    url: "/",
+    siteName: "BAR Striping Services",
     type: "website",
+    locale: "en_US",
     images: ["/LOGO.png"],
+  },
+  twitter: {
+    card: "summary",
+    title: "BAR Striping Services | Parking Lot Striping",
+    description:
+      "Crisp lines. Safe lots. Done right. Free quotes — call 205-240-3158.",
+    images: ["/LOGO.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
   },
 };
 

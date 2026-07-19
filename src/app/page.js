@@ -15,6 +15,7 @@ import FaqBar from "@/components/bar/FaqBar";
 import MobileCtaBar from "@/components/bar/MobileCtaBar";
 import ScrollReveal from "@/components/bar/ScrollReveal";
 import ServiceAreaBar, { SERVICE_AREAS } from "@/components/bar/ServiceAreaBar";
+import { SITE_URL } from "@/lib/site";
 import CtaBar from "@/components/bar/CtaBar";
 import ContactBar from "@/components/bar/ContactBar";
 import MapBar from "@/components/bar/MapBar";
@@ -26,12 +27,14 @@ import BackToTop from "@/components/BackToTop";
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": `${SITE_URL}/#business`,
   name: "BAR Striping Services",
   description:
     "Professional parking lot striping, re-striping, ADA-compliant markings, fire lanes, and warehouse floor striping. Locally owned and operated.",
+  url: SITE_URL,
   telephone: "+1-205-240-3158",
   email: "barstripingservices@gmail.com",
-  image: "/LOGO.png",
+  image: `${SITE_URL}/LOGO.png`,
   priceRange: "$$",
   founder: {
     "@type": "Person",

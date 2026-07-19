@@ -1,7 +1,14 @@
 import React from 'react';
+import { preload } from 'react-dom';
 
 // Full-width photo hero, content centered (background image set in bar-theme.css).
 function HeroBar() {
+    // the hero photo is the page's LCP element but loads via CSS —
+    // preload it so the browser fetches it immediately
+    preload('/assets/images/bar-striping/aerial-view-of-many-colorful-cars-parked-on-parkin.webp', {
+        as: 'image',
+        fetchPriority: 'high',
+    });
     return (
         <section className="bar-hero" id="home">
             <div className="bar-hero__bg" aria-hidden="true" />

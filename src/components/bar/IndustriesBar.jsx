@@ -62,7 +62,7 @@ function IndustriesBar() {
                                 <div className="icon" aria-hidden="true">
                                     <i className={item.icon} />
                                 </div>
-                                <h6 className="title">{item.title}</h6>
+                                <h3 className="title">{item.title}</h3>
                                 <p>{item.disc}</p>
                             </div>
                         </div>

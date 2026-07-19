@@ -81,16 +81,17 @@ function ContactBar() {
                             <form onSubmit={handleSubmit}>
                                 <div className="row g-0">
                                     <div className="col-md-6 pe-md-2">
-                                        <input type="text" name="name" placeholder="Your Name" required />
+                                        <input type="text" name="name" placeholder="Your Name" aria-label="Your name" required />
                                     </div>
                                     <div className="col-md-6 ps-md-2">
-                                        <input type="tel" name="phone" placeholder="Phone Number" />
+                                        <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone number" />
                                     </div>
                                 </div>
-                                <input type="email" name="email" placeholder="Email Address" required />
+                                <input type="email" name="email" placeholder="Email Address" aria-label="Email address" required />
                                 <textarea
                                     name="message"
                                     placeholder="What do you need striped? (size of lot, new layout or re-stripe, timeline...)"
+                                    aria-label="What do you need striped?"
                                     required
                                 />
                                 <button type="submit" className="rts-btn btn-primary">
