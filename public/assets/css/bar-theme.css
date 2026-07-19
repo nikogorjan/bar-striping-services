@@ -18,6 +18,31 @@
   --bar-yellow: #fdcd35;
   --bar-yellow-dark: #e0b217;
   --bar-cream: #fff8e2;
+
+  /* single site-wide font (Archivo, loaded via next/font in layout.js) —
+     Helvetica-style grotesque with Helvetica itself as fallback */
+  --font-primary: var(--font-site), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-secondary: var(--font-site), "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+/* template hardcodes its old fonts on headings/controls — force the
+   single site font everywhere */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+input, textarea, select, button, .rts-btn {
+  font-family: var(--font-secondary);
+}
+
+/* grotesque reads best slightly tightened at display sizes */
+h1,
+h2,
+h3,
+.title {
+  letter-spacing: -0.015em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1040,6 +1065,114 @@ div[id] {
 }
 
 /*----------------------------------------------------------
+  Before / after comparison slider
+----------------------------------------------------------*/
+
+.bar-ba__frame {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 6px solid #fff;
+  box-shadow: 0 30px 60px rgba(45, 45, 45, 0.18);
+  user-select: none;
+}
+.bar-ba__frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+.bar-ba__frame .divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--bar-yellow);
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 2;
+}
+.bar-ba__frame .knob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--bar-yellow);
+  color: var(--bar-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.bar-ba__frame .tag {
+  position: absolute;
+  top: 16px;
+  z-index: 2;
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  transform: skewX(-12deg);
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
+.bar-ba__frame .tag-before {
+  left: 16px;
+  background: var(--bar-dark);
+  color: #fff;
+}
+.bar-ba__frame .tag-after {
+  right: 16px;
+  background: var(--bar-yellow);
+  color: var(--bar-dark);
+}
+.bar-ba__frame input[type='range'] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 3;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.bar-ba__note {
+  text-align: center;
+  font-size: 15px;
+  color: var(--color-body);
+  margin: 26px 0 0;
+}
+.bar-ba__note a {
+  color: var(--bar-dark);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 3px solid var(--bar-yellow);
+  padding-bottom: 1px;
+  transition: var(--transition);
+}
+.bar-ba__note a:hover {
+  background: var(--bar-yellow);
+}
+@media (max-width: 575px) {
+  .bar-ba__frame {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/*----------------------------------------------------------
   Why choose us
 ----------------------------------------------------------*/
 
@@ -1075,7 +1208,7 @@ div[id] {
   position: relative;
   background:
     linear-gradient(rgba(25, 25, 25, 0.78), rgba(25, 25, 25, 0.78)),
-    url(../images/bar-striping/car-parking-with-mountains-in-the-background.webp) center/cover no-repeat;
+    url(../images/bar-striping/birmingham-uk-6-november-2016-wide-angle-view.webp) center/cover no-repeat;
   height: 100%;
   padding: 55px 45px;
   display: flex;
@@ -1709,6 +1842,23 @@ div[id] {
   Side menu (mobile) tweaks
 ----------------------------------------------------------*/
 
+/* close button sits top-right, where the hamburger was */
+.side-bar .close-icon-menu {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.side-bar .close-icon-menu i {
+  height: 48px;
+  width: 48px;
+  font-size: 18px;
+  color: var(--bar-dark) !important;
+  background: var(--bar-yellow) !important;
+}
 .side-bar .bar-logo {
   margin-bottom: 30px;
 }

@@ -7,6 +7,7 @@ import IndustriesBar from "@/components/bar/IndustriesBar";
 import StatsBar from "@/components/bar/StatsBar";
 import BenefitsBar from "@/components/bar/BenefitsBar";
 import SignsBar from "@/components/bar/SignsBar";
+import BeforeAfterBar from "@/components/bar/BeforeAfterBar";
 import WhyUsBar from "@/components/bar/WhyUsBar";
 import ProcessBar from "@/components/bar/ProcessBar";
 import TestimonialsBar from "@/components/bar/TestimonialsBar";
@@ -77,6 +78,7 @@ export default function Home() {
       <StatsBar />
       <BenefitsBar />
       <SignsBar />
+      <BeforeAfterBar />
       <WhyUsBar />
       <ProcessBar />
       <TestimonialsBar />

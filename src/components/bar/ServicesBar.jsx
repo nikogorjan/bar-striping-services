@@ -40,10 +40,10 @@ const SERVICES = [
     },
     {
         icon: 'fas fa-warehouse',
-        img: `${IMG}/office-building.webp`,
-        alt: 'Commercial buildings with fresh crosswalk markings',
+        img: `${IMG}/empty-indoor-parking-lots-during-the-coronavirus-p.webp`,
+        alt: 'Indoor parking garage with painted floor markings',
         title: 'Warehouse & Facility Striping',
-        disc: 'Interior and exterior line striping for warehouses and commercial facilities — aisles, walkways, and safety zones.',
+        disc: 'Interior and exterior line striping for warehouses, parking garages, and commercial facilities — aisles, walkways, and safety zones.',
     },
 ];
 
