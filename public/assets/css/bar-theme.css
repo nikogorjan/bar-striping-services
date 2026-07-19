@@ -27,6 +27,12 @@
 
 body {
   font-family: var(--font-primary);
+  /* the template's overflow-x:hidden turns body into a scroll container,
+     which grows a second scrollbar when reveal animations translate
+     elements near the page end. clip cuts horizontal overflow WITHOUT
+     creating a scroll container. */
+  overflow-x: clip !important;
+  overflow-y: visible !important;
 }
 
 /* template hardcodes its old fonts on headings/controls — force the
@@ -1932,6 +1938,11 @@ div[id] {
 .reveal.is-visible,
 .reveal-child.is-visible {
   opacity: 1;
+  transform: none;
+}
+/* the footer is the last element on the page — reveal it with a fade
+   only, so its translate can never extend the document height */
+.bar-footer.reveal {
   transform: none;
 }
 

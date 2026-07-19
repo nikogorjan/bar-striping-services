@@ -67,7 +67,9 @@ function ScrollReveal() {
                     }, CLEANUP_MS);
                 });
             },
-            { threshold: 0.08, rootMargin: '0px 0px -60px 0px' }
+            // sections must climb 25% up from the bottom edge before they
+            // animate, so the reveal always happens where the user can see it
+            { threshold: 0, rootMargin: '0px 0px -25% 0px' }
         );
 
         const sections = document.querySelectorAll(SECTIONS);
