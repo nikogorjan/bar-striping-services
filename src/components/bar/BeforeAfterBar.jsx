@@ -1,8 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 
-// Interactive before/after comparison slider.
-// NOTE: stock photos for now — swap for real job photos when available.
+// Interactive before/after comparison slider — real BAR Striping job photos.
 function BeforeAfterBar() {
     const [pos, setPos] = useState(50);
 
@@ -22,14 +21,14 @@ function BeforeAfterBar() {
                         <div className="bar-ba__frame">
                             <img
                                 className="after-img"
-                                src="/assets/images/bar-striping/parking-lot-after.webp"
-                                alt="Parking lot after professional striping with crisp white stalls"
+                                src="/assets/images/real-images/after.webp"
+                                alt="Retail parking lot after BAR Striping laid out fresh white stalls"
                                 loading="lazy"
                             />
                             <img
                                 className="before-img"
-                                src="/assets/images/bar-striping/parking-lot-before.webp"
-                                alt="Same parking lot before striping — blank asphalt"
+                                src="/assets/images/real-images/before.webp"
+                                alt="Same retail parking lot before striping — blank asphalt"
                                 loading="lazy"
                                 style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
                             />

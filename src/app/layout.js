@@ -17,7 +17,7 @@ export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Parking Lot Striping | BAR Striping Services | Free Quotes",
   description:
-    "Professional parking lot striping, re-striping, ADA-compliant markings, fire lanes & warehouse floor striping in the Birmingham, AL area. Locally owned, free quotes — call 205-240-3158.",
+    "Professional parking lot striping, re-striping, ADA-compliant markings & fire lanes. Based in Birmingham, serving central & north Alabama from Montgomery to Huntsville. Free quotes — call 205-240-3158.",
   keywords: [
     "parking lot striping",
     "parking lot re-striping",

@@ -5,7 +5,7 @@ import { preload } from 'react-dom';
 function HeroBar() {
     // the hero photo is the page's LCP element but loads via CSS —
     // preload it so the browser fetches it immediately
-    preload('/assets/images/bar-striping/aerial-view-of-many-colorful-cars-parked-on-parkin.webp', {
+    preload('/assets/images/real-images/IMG_3801.webp', {
         as: 'image',
         fetchPriority: 'high',
     });

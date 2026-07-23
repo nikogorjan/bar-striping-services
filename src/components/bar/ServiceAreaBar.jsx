@@ -1,18 +1,16 @@
 import React from 'react';
 
-// NOTE: city list is an assumption based on the 205 area code (Birmingham, AL
-// region) — confirm the actual service area with the client before launch.
+// Confirmed by the client (July 2026): based in Birmingham, serving central
+// and north Alabama — from Montgomery up to Huntsville.
 export const SERVICE_AREAS = [
     'Birmingham',
     'Hoover',
     'Vestavia Hills',
-    'Homewood',
-    'Trussville',
-    'Bessemer',
-    'Alabaster',
-    'Pelham',
-    'Gardendale',
     'Mountain Brook',
+    'Tuscaloosa',
+    'Gadsden',
+    'Montgomery',
+    'Huntsville',
 ];
 
 function ServiceAreaBar() {
@@ -23,12 +21,12 @@ function ServiceAreaBar() {
                     <div className="col-12 text-center">
                         <div className="rts-title-area text-center">
                             <p className="pre-title">Service Area</p>
-                            <h2 className="title">Parking Lot Striping Across Central Alabama</h2>
+                            <h2 className="title">Striping Central &amp; North Alabama</h2>
                         </div>
                         <p className="area-disc">
-                            BAR Striping Services is locally owned and operated, serving
-                            businesses and property owners throughout the Birmingham metro
-                            area, including:
+                            BAR Striping Services is based in Birmingham and works across
+                            central and north Alabama — from Montgomery all the way up to
+                            Huntsville, including:
                         </p>
                         <ul className="area-list">
                             {SERVICE_AREAS.map((city) => (
@@ -39,8 +37,9 @@ function ServiceAreaBar() {
                             ))}
                         </ul>
                         <p className="area-note">
-                            Don&apos;t see your town? We travel.{' '}
-                            <a href="tel:+12052403158">Call 205-240-3158</a> and ask.
+                            …and anywhere in between.{' '}
+                            <a href="tel:+12052403158">Call 205-240-3158</a> and ask about
+                            your town.
                         </p>
                     </div>
                 </div>

@@ -10,13 +10,13 @@ function AboutBar() {
                             <span className="stripe-accent" aria-hidden="true" />
                             <img
                                 className="main-img"
-                                src="/assets/images/bar-striping/low-section-of-road-worker-with-marking-machine-is.webp"
-                                alt="Line striping machine laying down a fresh white line"
+                                src="/assets/images/real-images/IMG_4175.webp"
+                                alt="Freshly sealcoated and striped church parking lot"
                             />
                             <img
                                 className="overlap-img"
-                                src="/assets/images/bar-striping/white-and-yellow-lines-of-pedestrian-crossing-at-i.webp"
-                                alt="Freshly painted white and yellow crosswalk markings"
+                                src="/assets/images/real-images/IMG_3695.webp"
+                                alt="BAR Striping line-striping machine next to a freshly painted yellow safety zone"
                             />
                             <div className="bar-owner-card">
                                 <div className="avatar" aria-hidden="true">HR</div>

@@ -8,6 +8,7 @@ import StatsBar from "@/components/bar/StatsBar";
 import BenefitsBar from "@/components/bar/BenefitsBar";
 import SignsBar from "@/components/bar/SignsBar";
 import BeforeAfterBar from "@/components/bar/BeforeAfterBar";
+import WorkBar from "@/components/bar/WorkBar";
 import WhyUsBar from "@/components/bar/WhyUsBar";
 import ProcessBar from "@/components/bar/ProcessBar";
 import TestimonialsBar from "@/components/bar/TestimonialsBar";
@@ -23,7 +24,7 @@ import FooterBar from "@/components/bar/FooterBar";
 import BackToTop from "@/components/BackToTop";
 
 // LocalBusiness structured data for local SEO.
-// TODO before launch: confirm service area cities and add street address + website URL.
+// Address: city/zip only — the client asked not to publish the street address.
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -42,13 +43,19 @@ const businessSchema = {
   },
   address: {
     "@type": "PostalAddress",
+    addressLocality: "Birmingham",
     addressRegion: "AL",
+    postalCode: "35209",
     addressCountry: "US",
   },
-  areaServed: SERVICE_AREAS.map((city) => ({
-    "@type": "City",
-    name: `${city}, AL`,
-  })),
+  areaServed: [
+    ...SERVICE_AREAS.map((city) => ({
+      "@type": "City",
+      name: `${city}, AL`,
+    })),
+    { "@type": "AdministrativeArea", name: "Central Alabama" },
+    { "@type": "AdministrativeArea", name: "North Alabama" },
+  ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Parking Lot Striping Services",
@@ -83,6 +90,7 @@ export default function Home() {
       <BenefitsBar />
       <SignsBar />
       <BeforeAfterBar />
+      <WorkBar />
       <WhyUsBar />
       <ProcessBar />
       <TestimonialsBar />

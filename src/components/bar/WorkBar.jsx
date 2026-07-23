@@ -1,37 +1,38 @@
 import React from 'react';
 
-const IMG = '/assets/images/bar-striping';
+const IMG = '/assets/images/real-images';
 
+// Real BAR Striping job photos.
 const WORK = [
     {
-        img: `${IMG}/aerial-view-of-many-colorful-cars-parked-on-parkin.webp`,
-        alt: 'Aerial view of a freshly striped parking lot with trees',
-        caption: 'Parking lot layout & striping',
+        img: `${IMG}/IMG_4181.webp`,
+        alt: 'Crisp white crosshatched markings at an athletic facility entrance',
+        caption: 'Athletic facility markings',
     },
     {
-        img: `${IMG}/top-down-of-car-park-at-outdoor.webp`,
-        alt: 'Top-down view of clean white parking stall lines',
-        caption: 'Crisp stall lines & hatched zones',
+        img: `${IMG}/IMG_3598.webp`,
+        alt: 'Storefront parking with freshly striped angled stalls at dusk',
+        caption: 'Storefront stalls, striped overnight',
     },
     {
-        img: `${IMG}/white-and-yellow-lines-of-pedestrian-crossing-at-i.webp`,
-        alt: 'Fresh white and yellow pedestrian crossing markings',
-        caption: 'Crosswalks & speed tables',
+        img: `${IMG}/IMG_4185.webp`,
+        alt: 'Bright yellow crosshatched walkway striping at a school athletic facility',
+        caption: 'School safety zones',
     },
     {
-        img: `${IMG}/parking-spot-designated-for-people-with-disabiliti.webp`,
-        alt: 'Yellow accessible parking and hatched safety markings',
-        caption: 'Accessible & safety markings',
+        img: `${IMG}/IMG_4017.webp`,
+        alt: 'Yellow hatched no-parking zone around an industrial generator pad',
+        caption: 'Industrial no-parking zones',
     },
     {
-        img: `${IMG}/huge-parking-for-cars-near-the-shopping-center-fro.webp`,
-        alt: 'Large retail shopping center parking lot from above',
-        caption: 'Large commercial properties',
+        img: `${IMG}/IMG_4145.webp`,
+        alt: 'Fresh double yellow centerline and white directional arrows on a campus road',
+        caption: 'Centerlines & directional arrows',
     },
     {
-        img: `${IMG}/painting-white-line-road-with-marking-machine-duri.webp`,
-        alt: 'Line striping machine spraying a fresh white line',
-        caption: 'Professional striping equipment',
+        img: `${IMG}/IMG_3720.webp`,
+        alt: 'Retail parking lot with brand new white stall lines',
+        caption: 'Retail lot re-stripe',
     },
 ];
 
@@ -42,8 +43,8 @@ function WorkBar() {
                 <div className="row">
                     <div className="col-12">
                         <div className="rts-title-area text-center">
-                            <p className="pre-title">Our Work</p>
-                            <h2 className="title">Lines We&apos;re Proud Of</h2>
+                            <p className="pre-title">Recent Work</p>
+                            <h2 className="title">Real Jobs. Real Lines.</h2>
                         </div>
                     </div>
                 </div>
