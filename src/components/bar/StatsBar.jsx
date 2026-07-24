@@ -4,10 +4,11 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import ErrorBoundary from '@/components/ErrorBoundary';
 
+// Real numbers provided by the client (July 2026).
 const STATS = [
-    { end: 250, suffix: '+', label: 'Parking Lots Striped' },
-    { end: 12000, suffix: '+', separator: ',', label: 'Stalls Painted' },
-    { end: 10, suffix: '+', label: 'Years of Experience' },
+    { end: 100, label: 'Projects Done' },
+    { end: 5000, separator: ',', label: 'Stalls Painted' },
+    { end: 5, suffix: '+', label: 'Years of Experience' },
     { end: 100, suffix: '%', label: 'Jobs Done Right' },
 ];
 
