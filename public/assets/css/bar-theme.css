@@ -1731,6 +1731,60 @@ div[id] {
 .bar-form .form-note a {
   color: var(--bar-yellow);
 }
+.bar-form .rts-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+/* honeypot field — visually gone, still in the DOM for bots */
+.bar-form .hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.bar-form .form-status {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  margin-top: 18px;
+}
+.bar-form .form-status i {
+  font-size: 20px;
+  margin-top: 2px;
+}
+.bar-form .form-status strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+.bar-form .form-status p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.bar-form .form-status a {
+  color: var(--bar-yellow);
+  font-weight: 700;
+  text-decoration: none;
+}
+.bar-form .form-status.success {
+  background: rgba(76, 175, 80, 0.12);
+  border-left: 4px solid #4caf50;
+}
+.bar-form .form-status.success i {
+  color: #6fce73;
+}
+.bar-form .form-status.error {
+  background: rgba(253, 205, 53, 0.1);
+  border-left: 4px solid var(--bar-yellow);
+}
+.bar-form .form-status.error i {
+  color: var(--bar-yellow);
+}
 @media (max-width: 575px) {
   .bar-form {
     padding: 35px 24px;

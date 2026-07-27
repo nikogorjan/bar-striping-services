@@ -1,21 +1,46 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 
-// The form composes an email in the visitor's mail app — no backend needed.
+// Quote form — submits via FormSubmit.co straight to the client's inbox.
+// NOTE: the first-ever submission triggers a one-time activation email to
+// barstripingservices@gmail.com; the client must click "Activate" once.
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/barstripingservices@gmail.com';
+
 function ContactBar() {
-    const handleSubmit = (e) => {
+    const [status, setStatus] = useState('idle'); // idle | sending | success | error
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const data = new FormData(e.currentTarget);
-        const subject = encodeURIComponent(
-            `Quote request from ${data.get('name') || 'website visitor'}`
-        );
-        const body = encodeURIComponent(
-            `Name: ${data.get('name')}\n` +
-            `Phone: ${data.get('phone')}\n` +
-            `Email: ${data.get('email')}\n\n` +
-            `${data.get('message')}`
-        );
-        window.location.href = `mailto:barstripingservices@gmail.com?subject=${subject}&body=${body}`;
+        const form = e.currentTarget;
+        const data = new FormData(form);
+
+        // honeypot: real visitors never fill this hidden field
+        if (data.get('company')) return;
+
+        setStatus('sending');
+        try {
+            const res = await fetch(FORM_ENDPOINT, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json',
+                },
+                body: JSON.stringify({
+                    name: data.get('name'),
+                    phone: data.get('phone'),
+                    email: data.get('email'),
+                    message: data.get('message'),
+                    _subject: `Quote request from ${data.get('name')} — barstripingservices.com`,
+                    _template: 'table',
+                    _captcha: 'false',
+                }),
+            });
+            if (!res.ok) throw new Error('bad status');
+            setStatus('success');
+            form.reset();
+        } catch {
+            setStatus('error');
+        }
     };
 
     return (
@@ -67,7 +92,7 @@ function ContactBar() {
                                 </div>
                                 <div>
                                     <span>Service Area</span>
-                                    <strong>Locally owned &amp; operated</strong>
+                                    <strong>Central &amp; North Alabama</strong>
                                 </div>
                             </div>
                         </div>
@@ -78,30 +103,72 @@ function ContactBar() {
                             <p className="form-sub">
                                 We&apos;ll get back to you with a free, no-obligation quote.
                             </p>
-                            <form onSubmit={handleSubmit}>
-                                <div className="row g-0">
-                                    <div className="col-md-6 pe-md-2">
-                                        <input type="text" name="name" placeholder="Your Name" aria-label="Your name" required />
-                                    </div>
-                                    <div className="col-md-6 ps-md-2">
-                                        <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone number" />
+                            {status === 'success' ? (
+                                <div className="form-status success" role="status">
+                                    <i className="fas fa-check-circle" />
+                                    <div>
+                                        <strong>Request sent!</strong>
+                                        <p>
+                                            Henry will get back to you shortly. In a hurry?{' '}
+                                            Call <a href="tel:+12052403158">205-240-3158</a>.
+                                        </p>
                                     </div>
                                 </div>
-                                <input type="email" name="email" placeholder="Email Address" aria-label="Email address" required />
-                                <textarea
-                                    name="message"
-                                    placeholder="What do you need striped? (size of lot, new layout or re-stripe, timeline...)"
-                                    aria-label="What do you need striped?"
-                                    required
-                                />
-                                <button type="submit" className="rts-btn btn-primary">
-                                    Send Quote Request
-                                </button>
-                                <p className="form-note">
-                                    Sending opens your email app. Prefer to talk?{' '}
-                                    Call Henry directly at <a href="tel:+12052403158">205-240-3158</a>.
-                                </p>
-                            </form>
+                            ) : (
+                                <form onSubmit={handleSubmit}>
+                                    {/* honeypot — hidden from real visitors */}
+                                    <input
+                                        type="text"
+                                        name="company"
+                                        className="hp-field"
+                                        tabIndex="-1"
+                                        autoComplete="off"
+                                        aria-hidden="true"
+                                    />
+                                    <div className="row g-0">
+                                        <div className="col-md-6 pe-md-2">
+                                            <input type="text" name="name" placeholder="Your Name" aria-label="Your name" required />
+                                        </div>
+                                        <div className="col-md-6 ps-md-2">
+                                            <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone number" />
+                                        </div>
+                                    </div>
+                                    <input type="email" name="email" placeholder="Email Address" aria-label="Email address" required />
+                                    <textarea
+                                        name="message"
+                                        placeholder="What do you need striped? (size of lot, new layout or re-stripe, timeline...)"
+                                        aria-label="What do you need striped?"
+                                        required
+                                    />
+                                    <button
+                                        type="submit"
+                                        className="rts-btn btn-primary"
+                                        disabled={status === 'sending'}
+                                    >
+                                        {status === 'sending' ? 'Sending…' : 'Send Quote Request'}
+                                    </button>
+                                    {status === 'error' && (
+                                        <div className="form-status error" role="alert">
+                                            <i className="fas fa-exclamation-triangle" />
+                                            <div>
+                                                <strong>Something went wrong.</strong>
+                                                <p>
+                                                    Please call <a href="tel:+12052403158">205-240-3158</a> or
+                                                    email{' '}
+                                                    <a href="mailto:barstripingservices@gmail.com">
+                                                        barstripingservices@gmail.com
+                                                    </a>{' '}
+                                                    directly.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    )}
+                                    <p className="form-note">
+                                        Prefer to talk? Call or text Henry directly at{' '}
+                                        <a href="tel:+12052403158">205-240-3158</a>.
+                                    </p>
+                                </form>
+                            )}
                         </div>
                     </div>
                 </div>
