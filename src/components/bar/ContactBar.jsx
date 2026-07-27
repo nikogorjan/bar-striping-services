@@ -12,9 +12,6 @@ function ContactBar() {
         const form = e.currentTarget;
         const data = new FormData(form);
 
-        // honeypot: real visitors never fill this hidden field
-        if (data.get('company')) return;
-
         setStatus('sending');
         try {
             const res = await fetch(FORM_ENDPOINT, {
@@ -25,7 +22,7 @@ function ContactBar() {
                     phone: data.get('phone'),
                     email: data.get('email'),
                     message: data.get('message'),
-                    company: data.get('company'),
+                    _hp_check: data.get('_hp_check'),
                 }),
             });
             const json = await res.json().catch(() => ({}));
@@ -110,10 +107,12 @@ function ContactBar() {
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit}>
-                                    {/* honeypot — hidden from real visitors */}
+                                    {/* honeypot — bots fill it, real visitors can't see it.
+                                        The name is deliberately non-semantic: fields named
+                                        "company"/"organization" get autofilled by browsers. */}
                                     <input
                                         type="text"
-                                        name="company"
+                                        name="_hp_check"
                                         className="hp-field"
                                         tabIndex="-1"
                                         autoComplete="off"

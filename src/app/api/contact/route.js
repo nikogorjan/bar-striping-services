@@ -17,10 +17,12 @@ export async function POST(req) {
     return NextResponse.json({ ok: false, error: "Invalid request." }, { status: 400 });
   }
 
-  const { name, phone, email, message, company } = body || {};
+  const { name, phone, email, message, _hp_check } = body || {};
 
-  // honeypot — bots fill it; pretend everything went fine
-  if (company) {
+  // honeypot — bots fill it; pretend everything went fine.
+  // Logged so a false positive is diagnosable instead of invisible.
+  if (_hp_check) {
+    console.warn("contact form: honeypot triggered, dropping submission");
     return NextResponse.json({ ok: true });
   }
 
