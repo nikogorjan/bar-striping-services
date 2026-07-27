@@ -1,10 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 
-// Quote form — submits via FormSubmit.co straight to the client's inbox.
-// NOTE: the first-ever submission triggers a one-time activation email to
-// barstripingservices@gmail.com; the client must click "Activate" once.
-const FORM_ENDPOINT = 'https://formsubmit.co/ajax/barstripingservices@gmail.com';
+// Quote form — submits to our own API route (nodemailer + cPanel SMTP).
+const FORM_ENDPOINT = '/api/contact';
 
 function ContactBar() {
     const [status, setStatus] = useState('idle'); // idle | sending | success | error
@@ -21,21 +19,17 @@ function ContactBar() {
         try {
             const res = await fetch(FORM_ENDPOINT, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    Accept: 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     name: data.get('name'),
                     phone: data.get('phone'),
                     email: data.get('email'),
                     message: data.get('message'),
-                    _subject: `Quote request from ${data.get('name')} — barstripingservices.com`,
-                    _template: 'table',
-                    _captcha: 'false',
+                    company: data.get('company'),
                 }),
             });
-            if (!res.ok) throw new Error('bad status');
+            const json = await res.json().catch(() => ({}));
+            if (!res.ok || !json.ok) throw new Error('send failed');
             setStatus('success');
             form.reset();
         } catch {

@@ -10,10 +10,14 @@
   },
   "dependencies": {
     "next": "^15.5.20",
+    "nodemailer": "^9.0.3",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.16.0",
     "react-scroll": "^1.9.3"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.0"
   }
 }
